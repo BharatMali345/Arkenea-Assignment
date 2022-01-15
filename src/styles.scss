@@ -11,7 +11,13 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$arkenea-assignment-primary: mat.define-palette(mat.$indigo-palette);
+// $arkenea-assignment-primary: mat.define-palette(mat.$indigo-palette);
+$arkenea-assignment-primary: mat.define-palette(
+  mat.$teal-palette,
+  A200,
+  A400,
+  A700
+);
 $arkenea-assignment-accent: mat.define-palette(
   mat.$pink-palette,
   A200,
@@ -48,5 +54,10 @@ body {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: #00a99d;
+}
+
+.project__header {
+  color: darkgray;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #e0e0e0;
 }

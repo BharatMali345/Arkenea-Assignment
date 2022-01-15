@@ -1,0 +1,30 @@
+.project__table--cnt {
+  width: 100%;
+  // height: 400px;
+  background-color: white;
+  .cnt {
+    width: calc(100% - 40px);
+    padding: 20px;
+    overflow-x: scroll;
+  }
+  table {
+    margin-top: 20px;
+    width: 100%;
+    border: solid 1px #e0e0e0;
+  }
+}
+
+:host ::ng-deep {
+  .project__table {
+    .mat-header-row {
+      background-color: #00a99d;
+    }
+    .mat-header-cell {
+      color: white;
+    }
+  }
+}
+mat-icon {
+  font-size: 16px;
+  cursor: pointer;
+}

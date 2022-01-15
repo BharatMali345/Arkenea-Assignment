@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "gender": "Male",
+    "address": "471,Duncan Avenue,New York",
+    "email": "johndoe@gmail.com",
+    "dob": "05/04/1980"
+  },
+  {
+    "id": 2,
+    "name": "Sew John",
+    "gender": "Female",
+    "address": "955,Hartwart Street,New York",
+    "email": "johnsew@gmail.com",
+    "dob": "10/04/1970"
+  },
+  {
+    "id": 3,
+    "name": "Rose Smith",
+    "gender": "Male",
+    "address": "471,Duncan Avenue,New York",
+    "email": "rosesmith@gmail.com",
+    "dob": "05/04/1989"
+  },
+  {
+    "id": 4,
+    "name": "Droid Crew",
+    "gender": "Male",
+    "address": "471,Duncan Avenue,New York",
+    "email": "droidcrew@gmail.com",
+    "dob": "05/04/1975"
+  },
+  {
+    "id": 5,
+    "name": "Rosa Doe",
+    "gender": "Female",
+    "address": "471,Duncan Avenue,New York",
+    "email": "rosa@gmail.com",
+    "dob": "05/04/1983"
+  },
+  {
+    "id": 6,
+    "name": "Doe Crew",
+    "gender": "Female",
+    "address": "471,Duncan Avenue,New York",
+    "email": "johndoe@gmail.com",
+    "dob": "05/10/1980"
+  },
+  {
+    "id": 7,
+    "name": "John Hunk",
+    "gender": "Male",
+    "address": "471,Duncan Avenue,New York",
+    "email": "johnhunk@gmail.com",
+    "dob": "05/07/1980"
+  }
+]

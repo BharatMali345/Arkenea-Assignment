@@ -1,0 +1,65 @@
+<div class="popup__cnt">
+  <div class="popup__cnt--box" *ngIf="Type == 'edit'">
+    <form #editForm="ngForm" *ngIf="!formLoading">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput name="name" [(ngModel)]="Data.name" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          type="text"
+          matInput
+          name="email"
+          [(ngModel)]="Data.email"
+          required
+        />
+      </mat-form-field>
+      <mat-radio-group name="gender" [(ngModel)]="Data.gender">
+        <mat-radio-button [value]="'Male'"> Male </mat-radio-button><br />
+        <mat-radio-button [value]="'Female'"> Female </mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field style="margin-top: 10px">
+        <mat-label>Date of Birth</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          [(ngModel)]="Data.dob"
+          name="dob"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <textarea
+          matInput
+          name="address"
+          [(ngModel)]="Data.address"
+          required
+        ></textarea>
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="editForm.invalid"
+        (click)="onBtnClicked('submit')"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+  <div class="popup__cnt--box" *ngIf="Type == 'delete'">
+    <div class="project__header">Delete User</div>
+    <p>Are you sure you want to delete {{ Data?.name }}?</p>
+    <button mat-raised-button color="primary" (click)="onBtnClicked('yes')">
+      Yes
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-stroked-button color="primary" (click)="onBtnClicked('no')">
+      No
+    </button>
+  </div>
+</div>

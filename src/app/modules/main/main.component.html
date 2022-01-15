@@ -1,0 +1,18 @@
+<div class="cnt" *ngIf="!loading">
+  <div class="user__cnt">
+    <app-table
+      [rowData]="usersData"
+      (onTableActionClicked)="btnClicked($event)"
+    ></app-table>
+  </div>
+  <div class="progress__cnt">
+    <app-details [Data]="usersData"></app-details>
+  </div>
+</div>
+<ng-container *ngIf="enablePopup">
+  <popup
+    [Type]="type"
+    [Data]="row"
+    (onActionClicked)="popupAction($event)"
+  ></popup>
+</ng-container>

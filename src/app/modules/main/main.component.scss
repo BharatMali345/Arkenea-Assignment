@@ -1,0 +1,31 @@
+.cnt {
+  padding: 20px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+
+  .user__cnt {
+    width: 70%;
+    margin-right: 20px;
+  }
+  .progress__cnt {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .cnt {
+    flex-wrap: wrap;
+    .user__cnt {
+      width: 100%;
+      margin-right: 0px;
+      order: 2;
+    }
+    .progress__cnt {
+      margin-bottom: 20px;
+
+      width: 100%;
+      order: 1;
+    }
+  }
+}

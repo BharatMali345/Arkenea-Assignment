@@ -1,0 +1,24 @@
+.header {
+  width: calc(100% - 40px);
+  height: 59px;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__flex {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    color: darkgray;
+  }
+}
+.body {
+  background-color: rgb(239, 239, 239);
+  width: 100%;
+  height: calc(100vh - 60px);
+}
